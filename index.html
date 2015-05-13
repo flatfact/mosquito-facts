@@ -185,7 +185,7 @@ input[type="reset"].button-primary,
 input[type="button"].button-primary {
   color: #FFF;
   background-color: #33C3F0;
-  border-color: #33C3F0; }
+  border-color: #33C3F0; margin: 10px;}
 .button.button-primary:hover,
 button.button-primary:hover,
 input[type="submit"].button-primary:hover,
@@ -587,8 +587,39 @@ p {
 	#infoMenu li a {
 		color: #fff;
 	}
-        
+ /* สำหรับพวกหำเล็ก
+	* --------------------------------------- */       
     @media only screen and (max-width: 767px) {
+.ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+   margin-bottom: 10px;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+    foot {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+    
+    .content {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
 num {
     font-size: 3em;
 }
@@ -668,7 +699,42 @@ num {
     #section10 h2 {
         color: black;
     }
-        
+/* สำหรับพวกหำใหญ่
+	* --------------------------------------- */
+ @media only screen and (min-width: 767px) {
+
+     .ghost-button {
+  display: inline-block;
+  width: 200px;
+  padding: 8px;
+  color: #fff;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease-out,
+              color 0.2s ease-out;
+}
+.ghost-button:hover,
+.ghost-button:active {
+  background-color: #fff;
+  color: #000;
+  transition: background-color 0.3s ease-in,
+              color 0.3s ease-in;
+}
+     
+foot {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.content {
+margin-left: 50px;
+margin-right: 50px;
+word-wrap: break-word;
+}
+
+
+ }
 
 	</style>
 
@@ -719,50 +785,50 @@ num {
 <div id="fullpage">
 	<div class="section" id="section0">
 		<div class="intro">
-			<h1><num>8</num><br>เรื่องที่คุณ(อาจ)ยังไม่รู้เกี่ยวกับ “ยุง”<br><div class="fb-like" data-href="http://hoof.flatfact.com/mosquito-facts/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="false"></div><a href="#secondPage"><div class="arrow bounce"></div></a></h1>
+			<h1><num>8</num><br>เรื่องที่คุณ(อาจ)ยังไม่รู้เกี่ยวกับ “ยุง”<br><div class="fb-like" data-href="http://hoof.flatfact.com/mosquito-facts/" data-layout="box_count" data-action="like" data-show-faces="true" data-share="true"></div><a href="#secondPage"><div class="arrow bounce"></div></a></h1>
 		</div>
 	</div>
 	<div class="section" id="section1">
 			<div class="intro">
-				<h2><num>1</num><br>หากมียุง 1,200,000 ตัวดูดเลือดคุณพร้อมกัน<br>จะทำให้เลือดของคุณหมดตัวได้</h2><br><a class="ghost-button" href="http://www.omgfacts.com/lists/4470/It-would-take-about-1-200-000-mosquitoes-to-fully-drain-the-average-human-body-of-blood">SOURCE</a>
+				<h2><num>1</num><br><div class="content">หากมียุง 1,200,000 ตัวดูดเลือดคุณพร้อมกันจะทำให้เลือดของคุณหมดตัวได้</div></h2><br><a class="ghost-button" href="http://www.omgfacts.com/lists/4470/It-would-take-about-1-200-000-mosquitoes-to-fully-drain-the-average-human-body-of-blood">SOURCE</a>
 			</div>
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h2><num>2</num><br>มีแต่ยุงตัวเมียเท่านั้นที่ดูดเลือดสัตว์อื่นเป็นอาหาร<br>ยุงตัวผู้จะดูดน้ำหวานจากเกสรดอกไม้เป็นอาหาร</h2><br><a class="ghost-button" href="http://en.wikipedia.org/wiki/Mosquito">SOURCE</a>
+            <h2><num>2</num><br><div class="content">มีแต่ยุงตัวเมียเท่านั้นที่ดูดเลือดสัตว์อื่นเป็นอาหาร ยุงตัวผู้จะดูดน้ำหวานจากเกสรดอกไม้เป็นอาหาร</div></h2><br><a class="ghost-button" href="http://en.wikipedia.org/wiki/Mosquito">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section3">
 		<div class="intro">
-			<h2><num>3</num><br>ยุงตัวผู้มีหูที่ดีพอๆกับมนุษย์เลยทีเดียว<br>ทำให้มันสามารถรู้เพศของยุงอีกตัวได้<br>โดยการฟังเสียงกระพือปีก</h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
+            <h2><num>3</num><br><div class="content">ยุงตัวผู้มีหูที่ดีพอๆกับมนุษย์เลยทีเดียวทำให้มันสามารถรู้เพศของยุงอีกตัวได้โดยการฟังเสียงกระพือปีก</div></h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
 		</div>
 	</div>
      <div class="section" id="section4">
 		<div class="intro">
-			<h2><num>4</num><br>ยุงสามารถผสมพันธุ์กันกลางอากาศได้<br>โดยใช้เวลาเพียง 15 วินาที ยุงตัวเมียก็พร้อมที่จะวางไข่</h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
+            <h2><num>4</num><br><div class="content">ยุงสามารถผสมพันธุ์กันกลางอากาศได้โดยใช้เวลาเพียง 15 วินาที ยุงตัวเมียก็พร้อมที่จะวางไข่</div></h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section5">
 		<div class="intro">
-			<h2><num>5</num><br>ยุงมีตาขนาดใหญ่มากเมื่อเทียบกับขนาดตัวของมัน<br>โดยตาของมันสามารถมองเห็นคลื่นความร้อน<br>และรังสีอินฟาเรดจากสัตว์อื่นได้</h2><br><a class="ghost-button" href="http://www.mosquitosolutions.com/mosquito_facts.html">SOURCE</a>
+            <h2><num>5</num><br><div class="content">ยุงมีตาขนาดใหญ่มากเมื่อเทียบกับขนาดตัวของมันโดยตาของมันสามารถมองเห็นคลื่นความร้อน และรังสีอินฟาเรดจากสัตว์อื่นได้</div></h2><br><a class="ghost-button" href="http://www.mosquitosolutions.com/mosquito_facts.html">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section6">
 		<div class="intro">
-			<h2><num>6</num><br>ยุงตัวผู้สามารถได้กลิ่นดอกไม้ที่อยู่ห่างออกไป 50 เมตรได้</h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
+            <h2><num>6</num><br><div class="content">ยุงตัวผู้สามารถได้กลิ่นดอกไม้ที่อยู่ห่างออกไป 50 เมตรได้</div></h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section7">
 		<div class="intro">
-			<h2><num>7</num><br>ยุงสามารถรับรู้ตำแหน่งของคนได้โดยการจับแก๊ซคาร์บอนไดออกไซด์<br>ทีออกมาจากลมหายใจคนอ้วนจึงมีโอกาสถูกยุงกัดได้มากกว่าคนผอม<br>เพราะคนอ้วนจะหายใจแรงกว่า</h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
+            <h2><num>7</num><br><div class="content">ยุงสามารถรับรู้ตำแหน่งของคนได้โดยการจับแก๊ซคาร์บอนไดออกไซด์ทีออกมาจากลมหายใจคนอ้วนจึงมีโอกาสถูกยุงกัดได้มากกว่าคนผอม เพราะคนอ้วนจะหายใจแรงกว่า</div></h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section8">
 		<div class="intro">
-			<h2><num>8</num><br>การเกาผื่นที่เกิดจากการถูกยุงกัดไม่ใช่ความคิดที่ดี<br>เลยเพราะจะทำให้เกิดการอักเสบ<br>ทางที่ดีควรใช้แอลกอฮอล์เช็ดบริเวณที่ถูกกัดจะทำให้หายเร็วขึ้น</h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
+            <h2><num>8</num><br><div class="content">การเกาผื่นที่เกิดจากการถูกยุงกัดไม่ใช่ความคิดที่ดีเลยเพราะจะทำให้เกิดการอักเสบ ทางที่ดีควรใช้แอลกอฮอล์เช็ดบริเวณที่ถูกกัดจะทำให้หายเร็วขึ้น</div></h2><br><a class="ghost-button" href="http://archive.news.softpedia.com/news/30-Things-You-Did-Not-Know-About-Mosquitoes-62240.shtml">SOURCE</a>
 		</div>
 	</div>
     <div class="section" id="section9">
-    <div class="intro"><h2></div><div align="center">CC 2015 Subthai_Production, Hoof.fr and Flatfact.com<br>บทความต่างๆในเว็บไซต์ อนุญาตให้นำไปเผยแพร่และแก้ไขได้โดยต้องอ้างอิงที่มาและไม่ใช้เพื่อการค้า ตาม<a href="https://creativecommons.org/licenses/by-nc/4.0/">สัญญาอนุญาตครีเอทีฟคอมมอนส์ 4.0 International</a>.<br>Powered by Jquery Fullpage.js on<a href="https://github.com/alvarotrigo/fullPage.js"> Github</a><br><br><a class="button button-primary" href="//facebook.com/subthaiTV">Facebook Page</a>         <a class="button button-primary" href="//github.com/flatfact">Fork Me On GitHub</a><br><br><br><br><a href="#firstPage"><div id="animated-example" class="animated bounce"><img src="//farm8.staticflickr.com/7601/16623750648_f4c543a294_o.png" width="40px"></div></a></div></div></div></div></h2>
+    <div class="intro"><h2></div><div align="center"><foot>CC Subthai_Production, Hoof.fr and Flatfact.com<br>บทความต่างๆในเว็บไซต์ อนุญาตให้นำไปเผยแพร่และแก้ไขได้โดยต้องอ้างอิงที่มาและไม่ใช้เพื่อการค้า ตาม<a href="https://creativecommons.org/licenses/by-nc/4.0/">สัญญาอนุญาตครีเอทีฟคอมมอนส์ 4.0 International</a>.</foot><br>Powered by Jquery Fullpage.js on<a href="https://github.com/alvarotrigo/fullPage.js"> Github</a><br><br><a class="button button-primary" href="//facebook.com/subthaiTV">Facebook Page</a><a class="button button-primary" href="//github.com/flatfact">Fork Me On GitHub</a><br><br><br><br><a href="#firstPage"><div id="animated-example" class="animated bounce"><img src="//farm8.staticflickr.com/7601/16623750648_f4c543a294_o.png" width="40px"></div></a></div></div></div></div></h2>
 </body>
 </html>
